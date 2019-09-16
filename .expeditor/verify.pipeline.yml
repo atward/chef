@@ -197,8 +197,8 @@ steps:
     - /workdir/scripts/bk_tests/bk_win_integration.ps1
   expeditor:
     executor:
-      docker:
-        host_os: windows
+      windows:
+        privileged: true
         environment:
           - FORCE_FFI_YAJL=ext
           - CHEF_LICENSE=accept-no-persist
@@ -209,8 +209,8 @@ steps:
     - /workdir/scripts/bk_tests/bk_win_functional.ps1
   expeditor:
     executor:
-      docker:
-        host_os: windows
+      windows:
+        privileged: true
         environment:
           - FORCE_FFI_YAJL=ext
           - CHEF_LICENSE=accept-no-persist
