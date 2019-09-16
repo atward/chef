@@ -199,6 +199,7 @@ steps:
     executor:
       windows:
         privileged: true
+        single-use: true
         environment:
           - FORCE_FFI_YAJL=ext
           - CHEF_LICENSE=accept-no-persist
@@ -211,6 +212,7 @@ steps:
     executor:
       windows:
         privileged: true
+        single-use: true
         environment:
           - FORCE_FFI_YAJL=ext
           - CHEF_LICENSE=accept-no-persist
